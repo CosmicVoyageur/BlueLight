@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:uiExtensions="clr-namespace:SoloFi.UiExtensions;assembly=SoloFi"
+             x:Class="SoloFi.Views.Ramp.ReaderLicencingView">
+  
+	<StackLayout Spacing="25">
+    
+    <Button Text="Set Licence" Command="{Binding SetLicenceCommand}"/>
+    <Button Text="Verify Licence" Command="{Binding VerifyLicenceCommand}"/>
+    <BoxView Color="Green" IsVisible="{Binding IsLicenceValid}"/>
+    <Label Text="{Binding Message}"/>
+    <uiExtensions:BindablePicker ItemsSource="{Binding ClientList}" SelectedItem="{Binding SelectedClient}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
+                                 WidthRequest="200" HeightRequest="500"/>
+  </StackLayout>
+</ContentPage>

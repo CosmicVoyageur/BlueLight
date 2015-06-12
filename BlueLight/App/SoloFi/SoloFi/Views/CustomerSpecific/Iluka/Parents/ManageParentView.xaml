@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lists="clr-namespace:XamlingCore.XamarinThings.Content.Lists;assembly=XamlingCore.XamarinThings"
+             xmlns:dynamic="clr-namespace:XamlingCore.XamarinThings.Content.Dynamic;assembly=XamlingCore.XamarinThings"
+             x:Class="SoloFi.Views.CustomerSpecific.Iluka.Parents.ManageParentView"
+             Title="{Binding ReferenceParent.Name}"
+             Style="{StaticResource IlukaContentPage}">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <x:Double x:Key="Width">
+        200
+      </x:Double>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Export" Command="{Binding ExportCommand}" Icon="Assets/Icons/savedisk.png"/>
+    <ToolbarItem Text="Settings" Command="{Binding SettingsCommand}" Icon="Assets/Icons/settings.png"/>
+  </ContentPage.ToolbarItems>
+  <StackLayout>
+    
+      <StackLayout Orientation="Horizontal">
+        <Entry Text="{Binding NewParentName, Mode=TwoWay}" Placeholder="New Name" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" 
+               Style="{StaticResource RampNormalEntry}" WidthRequest="{StaticResource Width}"/>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+          <Label Text="Count:" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource RampMinorHeading}"/>
+          <Label Text="{Binding Items.Count}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Style="{StaticResource RampMinorHeading}"/>
+          <Frame Padding="15"></Frame> <!--spacing-->
+        </StackLayout>
+
+      </StackLayout>
+      
+    <lists:XListView ItemsSource="{Binding Items}" MoreDataCommand="{Binding MoreDataCommand}" SelectedItem="{Binding SelectedItem,Mode=TwoWay}"
+                 VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Style="{StaticResource IlukaStandardList}">
+
+      <lists:XListView.ItemTemplate>
+        <DataTemplate>
+          <dynamic:DynamicContentCell>
+            <ViewCell.ContextActions>
+              <MenuItem Command="{Binding EditCommand}" CommandParameter="{Binding .}"
+                 Text="Edit" />
+              <MenuItem Command="{Binding SetParentCommand}" CommandParameter="{Binding .}"
+                 Text="Set Parent" />
+              <MenuItem Command="{Binding DeleteCommand}" CommandParameter="{Binding .}"
+                 Text="Delete" IsDestructive="True" />
+            </ViewCell.ContextActions>
+          </dynamic:DynamicContentCell>
+        </DataTemplate>
+      </lists:XListView.ItemTemplate>
+    </lists:XListView>
+    
+    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End">
+      <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Style="{StaticResource IlukaButton}"/>
+      <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource IlukaButton}"/>
+    </StackLayout>
+    
+    <Frame Padding="50"/> <!--for the bottom bar on windows phone-->
+  </StackLayout>
+</ContentPage>

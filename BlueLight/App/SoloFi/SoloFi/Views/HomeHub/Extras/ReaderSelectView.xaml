@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lists="clr-namespace:XamlingCore.XamarinThings.Content.Lists;assembly=XamlingCore.XamarinThings"
+             x:Class="SoloFi.Views.HomeHub.Extras.ReaderSelectView"
+             Title="Select a Bluetooth Reader"
+             Style="{StaticResource RampStandardContentPage}">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Back" Command="{Binding BackCommand}" Icon="Assets/Icons/back.png"/>
+  </ContentPage.ToolbarItems>
+  
+  <ScrollView>
+    <StackLayout>
+
+      <Frame Padding="25">
+        <Label Text="Select Reader from list" Style="{StaticResource RampMinorHeading}"/>
+      </Frame>
+      <lists:XListView ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem,Mode=TwoWay}"
+                       VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Style="{StaticResource RampStandardList}" HeightRequest="300">
+      </lists:XListView>
+
+      <Frame Padding="25" VerticalOptions="CenterAndExpand">
+        <Button Text="Done" Command="{Binding DoneCommand}" Style="{StaticResource RampDoneButton}" HorizontalOptions="Center" VerticalOptions="Start" />
+
+      </Frame>
+
+      <Frame Padding="25"></Frame> <!--for bottom of page-->
+    </StackLayout>
+  </ScrollView>
+  
+	
+</ContentPage>

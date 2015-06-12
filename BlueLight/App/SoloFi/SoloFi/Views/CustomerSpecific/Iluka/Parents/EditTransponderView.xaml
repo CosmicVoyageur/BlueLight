@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SoloFi.Views.CustomerSpecific.Iluka.Parents.EditTransponderView"
+             Title="Edit Transponder"
+             Style="{StaticResource IlukaContentPage}">
+  
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <LayoutOptions x:Key="HorzOptions" Alignment="Center" Expands="True"/>
+      <x:Double x:Key="Width">
+        200
+      </x:Double>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+	<StackLayout HorizontalOptions="{StaticResource HorzOptions}" Spacing="25">
+    <Label Text="{Binding ReferenceTag.SampleIdentifier}" HorizontalOptions="{StaticResource HorzOptions}" WidthRequest="{StaticResource Width}" Style="{StaticResource RampMinorHeading}"/>
+    <Entry Text="{Binding NewSampleIdentifier}" Placeholder="New Sample Id" HorizontalOptions="{StaticResource HorzOptions}" WidthRequest="{StaticResource Width}" Style="{StaticResource RampNormalEntry}"/>
+    <Button Text="Write" Command="{Binding WriteCommand}" HorizontalOptions="{StaticResource HorzOptions}" WidthRequest="{StaticResource Width}" Style="{StaticResource IlukaButton}"/>
+  </StackLayout>
+</ContentPage>

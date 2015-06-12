@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lists="clr-namespace:XamlingCore.XamarinThings.Content.Lists;assembly=XamlingCore.XamarinThings"
+             xmlns:dynamic="clr-namespace:XamlingCore.XamarinThings.Content.Dynamic;assembly=XamlingCore.XamarinThings"
+             x:Class="SoloFi.Views.TestView"
+             Title="Test"
+             Style="{StaticResource RampStandardContentPage}">
+  
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="hello"/>
+    <ToolbarItem Text="bye"/>
+  </ContentPage.ToolbarItems>
+	<StackLayout>
+    <Button Text="Button One" Command="{Binding CommandOne}" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource RampNormalButton}"/>
+    <Button Text="Button Two" Command="{Binding CommandTwo}" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource RampNormalButton}"/>
+    <Button Text="To Login page" Command="{Binding GoToLoginCommand}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource RampNormalButton}"/>
+    <Button Text="New Home" Command="{Binding GoToNewHomeCommand}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Style="{StaticResource RampNormalButton}"/>
+    <Button Text ="Delete All Entities" Command="{Binding DeleteLocalEntitiesCommand}" HorizontalOptions="CenterAndExpand" Style="{StaticResource RampNormalButton}"/>
+    <Button Text ="Download All Entities" Command="{Binding DownloadEntitiesCommand}" HorizontalOptions="CenterAndExpand" Style="{StaticResource RampNormalButton}"/>
+
+    <Image Source="Assets/filtericon.png" />
+
+    <lists:XListView ItemsSource="{Binding Items}" MoreDataCommand="{Binding MoreDataCommand}" SelectedItem="{Binding SelectedItem,Mode=TwoWay}"
+                  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Style="{StaticResource RampStandardList}">
+    </lists:XListView>
+    
+  </StackLayout>
+</ContentPage>

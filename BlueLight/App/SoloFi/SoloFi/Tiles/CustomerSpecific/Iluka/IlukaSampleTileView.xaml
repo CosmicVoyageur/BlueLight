@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SoloFi.Tiles.CustomerSpecific.Iluka.IlukaSampleTileView"
+             Style="{StaticResource IlukaListItem}">
+
+
+  
+  <Grid ColumnSpacing="10">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="70*" />
+      <ColumnDefinition Width="30*" />
+    </Grid.ColumnDefinitions>
+
+    <StackLayout Orientation="Vertical">
+      <Label Text="{Binding Item.SampleIdentifier}" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource IlukaMinorHeading}" />
+      <Label Text="{Binding Item.EpcOrOtherMessage}" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource RampPropertyValue}"/>
+    </StackLayout>
+
+    <Label Text="Parent Tag" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Style="{StaticResource RampPropertyValue}" IsVisible="{Binding IsParentTag}"
+           Grid.Row="0" Grid.Column="1"/>
+
+
+  </Grid>
+  
+</ContentView>

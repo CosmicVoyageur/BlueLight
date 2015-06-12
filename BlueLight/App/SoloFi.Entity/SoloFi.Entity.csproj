@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85B4EF43-0FF4-4698-8156-177BF3675BBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SoloFi.Entity</RootNamespace>
+    <AssemblyName>SoloFi.Entity</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>02ddcc72</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AuthorizationTokenDto.cs" />
+    <Compile Include="CustomerSpecific\Iluka\ChildSample.cs" />
+    <Compile Include="CustomerSpecific\Iluka\IlukaBarcode.cs" />
+    <Compile Include="CustomerSpecific\Iluka\IlukaUhfTag.cs" />
+    <Compile Include="CustomerSpecific\Iluka\ISampleIdentifier.cs" />
+    <Compile Include="CustomerSpecific\Iluka\ParentCrate.cs" />
+    <Compile Include="FileRepresentation.cs" />
+    <Compile Include="ItemReasonPair.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemSearchParameters.cs" />
+    <Compile Include="ItemType.cs" />
+    <Compile Include="LookupEntity.cs" />
+    <Compile Include="OData\ItemODataCollection.cs" />
+    <Compile Include="Reason.cs" />
+    <Compile Include="RFID\BatteryState.cs" />
+    <Compile Include="Place.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RFID\Reader.cs" />
+    <Compile Include="RFID\ReaderState.cs" />
+    <Compile Include="RFID\Tag.cs" />
+    <Compile Include="ApplicationSettingsEntity.cs" />
+    <Compile Include="SmartTrackInventory.cs" />
+    <Compile Include="Snapshot.cs" />
+    <Compile Include="User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1-beta2\lib\portable-net45+wp80+win8+wpa81+aspnetcore50\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PCLCrypto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d4421c8a4786956c, processorArchitecture=MSIL">
+      <HintPath>..\packages\PCLCrypto.1.0.2.15130\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\PCLCrypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Tsl.AsciiProtocol.Pcl">
+      <HintPath>..\packages\Tsl.AsciiProtocol.Pcl.1.2.2\lib\Tsl.AsciiProtocol.Pcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Validation, Version=2.0.0.0, Culture=neutral, PublicKeyToken=2fc06f0d701809a7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Validation.2.0.6.15003\lib\portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10\Validation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamlingCore.Portable.Contract, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlingCore.2.0.138\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\XamlingCore.Portable.Contract.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamlingCore.Portable.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlingCore.2.0.138\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\XamlingCore.Portable.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamlingCore.Portable.Glue, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlingCore.2.0.138\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\XamlingCore.Portable.Glue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamlingCore.Portable.Messages, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlingCore.2.0.138\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\XamlingCore.Portable.Messages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamlingCore.Portable.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlingCore.2.0.138\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\XamlingCore.Portable.Model.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamlingCore.Portable.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlingCore.2.0.138\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\XamlingCore.Portable.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamlingCore.Portable.Service, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlingCore.2.0.138\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\XamlingCore.Portable.Service.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamlingCore.Portable.Util, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlingCore.2.0.138\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\XamlingCore.Portable.Util.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamlingCore.Portable.View, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlingCore.2.0.138\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\XamlingCore.Portable.View.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamlingCore.Portable.Workflow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlingCore.2.0.138\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\XamlingCore.Portable.Workflow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamlingCore.XamarinThings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlingCore.2.0.138\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\XamlingCore.XamarinThings.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

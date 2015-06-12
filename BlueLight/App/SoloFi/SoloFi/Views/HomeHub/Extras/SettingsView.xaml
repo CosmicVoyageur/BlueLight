@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SoloFi.Views.HomeHub.Extras.SettingsView"
+             Style="{StaticResource RampStandardContentPage}"
+             Title="Settings">
+
+  
+  
+  <StackLayout>
+  <Frame Padding="10">
+    <BoxView Color="Black" WidthRequest="600" HeightRequest="2"/>
+  </Frame>
+    
+    <ScrollView HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+        <StackLayout HorizontalOptions="CenterAndExpand">
+          <!--Reader Settings-->
+          <Label Text="Reader" HorizontalOptions="CenterAndExpand" Style="{StaticResource RampMajorHeading}"/>
+
+
+          <Grid HorizontalOptions="CenterAndExpand" RowSpacing="20" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+              <RowDefinition Height="Auto" />
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Status:" HorizontalOptions="End" VerticalOptions="CenterAndExpand" Style="{StaticResource RampMinorHeading}"
+                   Grid.Row="0" Grid.Column="0"/>
+            <Label Text="{Binding ReaderStatusText}" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Style="{StaticResource RampPropertyValue}"
+                   TextColor="{Binding ReaderStatusColour}"
+                   Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="Reader Power" Style="{StaticResource RampMinorHeading}" HorizontalOptions="End" VerticalOptions="CenterAndExpand"
+                   Grid.Row="1" Grid.Column="0"/>
+            <Label Text="{Binding ReaderPowerText}" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Style="{StaticResource RampPropertyValue}"
+                   Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="Reader Battery State" Style="{StaticResource RampMinorHeading}" HorizontalOptions="End" VerticalOptions="CenterAndExpand"
+                   Grid.Row="2" Grid.Column="0"/>
+            <Label Text="{Binding ReaderBatteryPercentage}" Style="{StaticResource RampPropertyValue}" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"
+                   Grid.Row="2" Grid.Column="1"/>
+          </Grid>
+
+
+          <Frame Padding="10">
+            <BoxView Color="Black" WidthRequest="600" HeightRequest="2"/>
+          </Frame>
+          <!--Application Settings-->
+          <Label Text="Application" HorizontalOptions="CenterAndExpand" Style="{StaticResource RampMajorHeading}"/>
+
+          <Grid HorizontalOptions="CenterAndExpand" RowSpacing="20" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto" />
+              <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Server:" HorizontalOptions="End" VerticalOptions="CenterAndExpand" Style="{StaticResource RampMinorHeading}"
+                   Grid.Row="0" Grid.Column="0"/>
+            <Entry Text="{Binding ServerBaseUrl}" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="250" Style="{StaticResource RampNormalEntry}"
+                   Grid.Row="0" Grid.Column="1"/>
+
+            <Button Text="Delete Local Data" Command="{Binding DeleteLocalDataCommand}" Style="{StaticResource RampNormalButton}"
+                    Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+          </Grid>
+          <Frame Padding="25">
+            <Button Text="Save" Style="{StaticResource RampDoneButton}" HorizontalOptions="Center"/>
+          </Frame>
+
+      </StackLayout>
+      
+    </ScrollView>
+    
+  
+  </StackLayout>
+	
+</ContentPage>

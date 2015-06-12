@@ -1,0 +1,41 @@
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using SoloFi.Contract.Services;
+using XamlingCore.Portable.Contract.Downloaders;
+using XamlingCore.Portable.Net.DownloadConfig;
+using XamlingCore.Portable.Net.Service;
+
+namespace SoloFi.Model.Config
+{
+    public class TransferConfigService: HttpTransferConfigServiceBase
+    {
+        private readonly IApplicationSettingsService _applicationSettingsService;
+
+        public TransferConfigService(IApplicationSettingsService applicationSettingsService)
+        {
+            _applicationSettingsService = applicationSettingsService;
+        }
+
+        public override async Task<IHttpTransferConfig> GetConfig(string url, string verb)
+        {
+            var settings = await _applicationSettingsService.GetApplicationSettings();
+            var baseUrl = settings.ServerBaseUrl;
+            var finalUrl = baseUrl + url;
+            var config = new StandardHttpConfig
+            {
+                Accept = "application/json",
+                IsValid = true,
+                Url = finalUrl,
+                BaseUrl = baseUrl,
+                Verb = verb,
+                Headers = new Dictionary<string, string>()
+            };
+
+            if (settings.StoredToken!=null && settings.StoredToken.Token!=null)config.Headers.Add("Authorization", "Token " + settings.StoredToken.Token);
+
+            
+            return config;
+        }
+
+    }
+}

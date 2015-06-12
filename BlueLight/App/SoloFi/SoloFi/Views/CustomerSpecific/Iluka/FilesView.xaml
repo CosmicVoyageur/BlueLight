@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lists="clr-namespace:XamlingCore.XamarinThings.Content.Lists;assembly=XamlingCore.XamarinThings"
+             xmlns:dynamic="clr-namespace:XamlingCore.XamarinThings.Content.Dynamic;assembly=XamlingCore.XamarinThings"
+             x:Class="SoloFi.Views.CustomerSpecific.Iluka.FilesView"
+             Style="{StaticResource IlukaContentPage}"
+             Title="Local Files">
+	<StackLayout>
+    <lists:XListView ItemsSource="{Binding Items}" MoreDataCommand="{Binding MoreDataCommand}" SelectedItem="{Binding SelectedItem,Mode=TwoWay}"
+                 VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Style="{StaticResource IlukaStandardList}">
+
+      <lists:XListView.ItemTemplate>
+        <DataTemplate>
+          <dynamic:DynamicContentCell>
+            <ViewCell.ContextActions>
+              <MenuItem Command="{Binding ShareCommand}" CommandParameter="{Binding .}"
+                 Text="Share" />
+              <MenuItem Command="{Binding DeleteCommand}" CommandParameter="{Binding .}"
+                 Text="Delete" IsDestructive="True" />
+            </ViewCell.ContextActions>
+          </dynamic:DynamicContentCell>
+        </DataTemplate>
+      </lists:XListView.ItemTemplate>
+    </lists:XListView>
+    
+  </StackLayout>
+</ContentPage>

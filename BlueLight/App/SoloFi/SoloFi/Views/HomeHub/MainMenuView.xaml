@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SoloFi.Views.HomeHub.MainMenuView"
+             Title="Home"
+             Style="{StaticResource RampStandardContentPage}">
+  
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <LayoutOptions x:Key="HorzOptions" Alignment="Center" Expands="False"/>
+      <x:Double x:Key="ButtonWidth">
+        200
+      </x:Double>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ScrollView>
+    <StackLayout VerticalOptions="CenterAndExpand" Spacing="20">
+
+      <Frame Padding="25">
+        <!--This is the list to any custom stuff for a customer-->
+        <Button Text="{Binding CustomerName}" HorizontalOptions="{StaticResource HorzOptions}" WidthRequest="{StaticResource ButtonWidth}" Command="{Binding SpecificCustomerCommand}"
+                Style="{StaticResource RampNormalButton}"/>
+      </Frame>
+     
+
+      
+      <Button Text="Connect" HorizontalOptions="{StaticResource HorzOptions}" WidthRequest="{StaticResource ButtonWidth}" Command="{Binding ConnectToReaderCommand}"
+              Style="{StaticResource RampNormalButton}"/>
+
+      <Button Text="Basic Scan" HorizontalOptions="{StaticResource HorzOptions}" WidthRequest="{StaticResource ButtonWidth}" Command="{Binding TagListCommand}"
+              Style="{StaticResource RampNormalButton}"/>
+
+     
+      <Button Text="Settings" HorizontalOptions="{StaticResource HorzOptions}" WidthRequest="{StaticResource ButtonWidth}" Command="{Binding SettingsCommand}"
+              Style="{StaticResource RampNormalButton}"/>
+
+      <Button Text="Help" HorizontalOptions="{StaticResource HorzOptions}" WidthRequest="{StaticResource ButtonWidth}" Command="{Binding HelpCommand}"
+              Style="{StaticResource RampNormalButton}"/>
+
+
+    </StackLayout>
+  </ScrollView>
+ 
+</ContentPage>

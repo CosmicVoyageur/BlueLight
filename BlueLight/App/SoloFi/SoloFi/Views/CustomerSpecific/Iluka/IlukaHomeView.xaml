@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SoloFi.Views.CustomerSpecific.Iluka.IlukaHomeView"
+             Title="Iluka Home"
+             Style="{StaticResource IlukaContentPage}">
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <LayoutOptions x:Key="HorzOptions" Alignment="Center" Expands="False"/>
+      <x:Double x:Key="ButtonWidth">
+        200
+      </x:Double>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  
+  <ScrollView>
+    <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+      <Button Text="View Parents" HorizontalOptions="{StaticResource HorzOptions}" WidthRequest="{StaticResource ButtonWidth}" Command="{Binding ViewParentsCommand}"
+              Style="{StaticResource IlukaButton}"/>
+
+      <Button Text="Quick Pick" HorizontalOptions="{StaticResource HorzOptions}" WidthRequest="{StaticResource ButtonWidth}" Command="{Binding QuickScanCommand}"
+              Style="{StaticResource IlukaButton}"/>
+
+      <Button Text="Files" HorizontalOptions="{StaticResource HorzOptions}" WidthRequest="{StaticResource ButtonWidth}" Command="{Binding FilesCommand}"
+              Style="{StaticResource IlukaButton}" IsEnabled="{Binding IsReaderLicenced}"/>
+
+      <Button Text="Help" HorizontalOptions="{StaticResource HorzOptions}" WidthRequest="{StaticResource ButtonWidth}" Command="{Binding HelpCommand}"
+             Style="{StaticResource IlukaButton}" />
+
+      <Frame Padding="50"/>
+      <!--for bottom bar-->
+    </StackLayout>
+  </ScrollView>
+  
+	
+</ContentPage>
