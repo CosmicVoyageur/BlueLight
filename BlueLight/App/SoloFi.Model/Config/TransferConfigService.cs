@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using SoloFi.Contract.Services;
+using BlueLight.Contract.Services;
 using XamlingCore.Portable.Contract.Downloaders;
 using XamlingCore.Portable.Net.DownloadConfig;
 using XamlingCore.Portable.Net.Service;
 
-namespace SoloFi.Model.Config
+namespace BlueLight.Model.Config
 {
     public class TransferConfigService: HttpTransferConfigServiceBase
     {

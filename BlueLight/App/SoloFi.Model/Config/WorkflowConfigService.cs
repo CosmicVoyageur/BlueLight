@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using SoloFi.Contract.Services;
+using BlueLight.Contract.Services;
 using XamlingCore.Portable.Workflow.Flow;
 
-namespace SoloFi.Model.Config
+namespace BlueLight.Model.Config
 {
     public class WorkflowConfigService : IWorkflowConfigService
     {

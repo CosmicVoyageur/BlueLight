@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace SoloFi.Contract.Services
+namespace BlueLight.Contract.Services
 {
     public interface IWorkflowConfigService
     {

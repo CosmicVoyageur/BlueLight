@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using XamlingCore.Portable.Contract.Entities;
 using XamlingCore.Portable.Model.Contract;
 
-namespace SoloFi.Model.Services
+namespace BlueLight.Model.Services
 {
     public abstract class LocalEntityService<T> where T:class, IEntity, new()
     {

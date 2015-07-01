@@ -9,8 +9,8 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SoloFi.Droid</RootNamespace>
-    <AssemblyName>SoloFi.Droid</AssemblyName>
+    <RootNamespace>BlueLight.Droid</RootNamespace>
+    <AssemblyName>BlueLight.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
@@ -209,20 +209,20 @@
     <AndroidResource Include="Resources\drawable\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SoloFi.Contract\SoloFi.Contract.csproj">
+    <ProjectReference Include="..\..\SoloFi.Contract\BlueLight.Contract.csproj">
       <Project>{822BE395-C4AD-406A-AB22-7F0BB08CA0B9}</Project>
-      <Name>SoloFi.Contract</Name>
+      <Name>BlueLight.Contract</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SoloFi.Entity\SoloFi.Entity.csproj">
+    <ProjectReference Include="..\..\SoloFi.Entity\BlueLight.Entity.csproj">
       <Project>{85b4ef43-0ff4-4698-8156-177bf3675bbc}</Project>
-      <Name>SoloFi.Entity</Name>
+      <Name>BlueLight.Entity</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SoloFi.Model\SoloFi.Model.csproj">
+    <ProjectReference Include="..\..\SoloFi.Model\BlueLight.Model.csproj">
       <Project>{b4fbd839-28db-4c32-a93d-cb76dedc8e61}</Project>
-      <Name>SoloFi.Model</Name>
+      <Name>BlueLight.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SoloFi\SoloFi.csproj">
-      <Name>SoloFi</Name>
+    <ProjectReference Include="..\SoloFi\BlueLight.csproj">
+      <Name>BlueLight</Name>
       <Project>{124C1DF8-2F2D-4CD8-920D-785E923DC926}</Project>
     </ProjectReference>
   </ItemGroup>

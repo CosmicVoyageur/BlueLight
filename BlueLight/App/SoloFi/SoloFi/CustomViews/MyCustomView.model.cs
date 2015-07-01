@@ -1,6 +1,6 @@
 ﻿using XamlingCore.Portable.View.ViewModel;
 
-namespace SoloFi.CustomViews
+namespace BlueLight.CustomViews
 {
     public class MyCustomViewModel : XViewModel
     {

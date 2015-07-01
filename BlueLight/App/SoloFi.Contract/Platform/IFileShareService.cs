@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SoloFi.Contract.Platform
+namespace BlueLight.Contract.Platform
 {
     public interface IFileShareService
     {

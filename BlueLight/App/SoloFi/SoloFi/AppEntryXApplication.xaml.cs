@@ -1,6 +1,6 @@
 ﻿using XamlingCore.XamarinThings.Core;
 
-namespace SoloFi
+namespace BlueLight
 {
     public partial class AppEntryXApplication : XApplication
     {

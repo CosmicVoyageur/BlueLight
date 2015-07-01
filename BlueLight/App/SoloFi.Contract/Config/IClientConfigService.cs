@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SoloFi.Contract.Config
+namespace BlueLight.Contract.Config
 {
     public interface IClientConfigService
     {

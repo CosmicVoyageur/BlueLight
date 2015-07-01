@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using SoloFi.Entity;
+using BlueLight.Entity;
 
-namespace SoloFi.Contract.Services
+namespace BlueLight.Contract.Services
 {
     public interface IApplicationSettingsService
     {

@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("SoloFi.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("BlueLight.Droid.Resource", IsApplication=true)]
 
-namespace SoloFi.Droid
+namespace BlueLight.Droid
 {
 	
 	
@@ -26,14 +26,14 @@ namespace SoloFi.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::ModernHttpClient.Resource.String.library_name = global::SoloFi.Droid.Resource.String.library_name;
-			global::PCLCrypto.Resource.String.ApplicationName = global::SoloFi.Droid.Resource.String.ApplicationName;
-			global::PCLCrypto.Resource.String.Hello = global::SoloFi.Droid.Resource.String.Hello;
-			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::SoloFi.Droid.Resource.String.ApplicationName;
-			global::Xamarin.Forms.Platform.Resource.String.Hello = global::SoloFi.Droid.Resource.String.Hello;
-			global::XamlingCore.Droid.Resource.String.ApplicationName = global::SoloFi.Droid.Resource.String.ApplicationName;
-			global::XamlingCore.Droid.Resource.String.Hello = global::SoloFi.Droid.Resource.String.Hello;
-			global::XamlingCore.Droid.Resource.String.library_name = global::SoloFi.Droid.Resource.String.library_name;
+			global::ModernHttpClient.Resource.String.library_name = global::BlueLight.Droid.Resource.String.library_name;
+			global::PCLCrypto.Resource.String.ApplicationName = global::BlueLight.Droid.Resource.String.ApplicationName;
+			global::PCLCrypto.Resource.String.Hello = global::BlueLight.Droid.Resource.String.Hello;
+			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::BlueLight.Droid.Resource.String.ApplicationName;
+			global::Xamarin.Forms.Platform.Resource.String.Hello = global::BlueLight.Droid.Resource.String.Hello;
+			global::XamlingCore.Droid.Resource.String.ApplicationName = global::BlueLight.Droid.Resource.String.ApplicationName;
+			global::XamlingCore.Droid.Resource.String.Hello = global::BlueLight.Droid.Resource.String.Hello;
+			global::XamlingCore.Droid.Resource.String.library_name = global::BlueLight.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute

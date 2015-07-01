@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:lists="clr-namespace:XamlingCore.XamarinThings.Content.Lists;assembly=XamlingCore.XamarinThings"
-             x:Class="SoloFi.Views.MasterDetailMenuView"
+             x:Class="BlueLight.Views.Menu.MasterDetailMenuView"
              Title="Menu"
              Icon="icon.png">
   <StackLayout>

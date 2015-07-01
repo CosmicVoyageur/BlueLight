@@ -4,10 +4,10 @@ using System.Threading.Tasks;
 using Android.App;
 using Android.Bluetooth;
 using Android.Content;
-using SoloFi.Contract.Platform;
+using BlueLight.Contract.Platform;
 using Tsl.AsciiProtocol.Pcl;
 
-namespace SoloFi.Droid.Platform
+namespace BlueLight.Droid.Platform
 {
     class BluetoothRfidReaderDiscoveryService :IBluetoothRfidReaderDiscoveryService
     {

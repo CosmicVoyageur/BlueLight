@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SoloFi.Model")]
+[assembly: AssemblyTitle("BlueLight.Model")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Ramp")]
-[assembly: AssemblyProduct("SoloFi.Model")]
+[assembly: AssemblyCompany("Rian")]
+[assembly: AssemblyProduct("BlueLight.Model")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

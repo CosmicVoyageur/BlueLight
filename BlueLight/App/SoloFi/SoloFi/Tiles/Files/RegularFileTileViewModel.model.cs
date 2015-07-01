@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using SoloFi.Entity;
+﻿using System.Windows.Input;
+using BlueLight.Entity;
 using XamlingCore.Portable.View.ViewModel.Base;
 
-namespace SoloFi.Tiles.Files
+namespace BlueLight.Tiles.Files
 {
     public class RegularFileTileViewModel : ItemViewModel<FileRepresentation>
     {

@@ -9,7 +9,7 @@ using Tsl.AsciiProtocol.Pcl;
 
 //using TechnologySolutions.Rfid.AsciiProtocol;
 
-namespace SoloFi.Droid.Platform
+namespace BlueLight.Droid.Platform
 {
     /// <summary>
     /// A Wrapper for the Android Bluetooth Socket, allowing ASCII protocol to connect to reader via bluetooth

@@ -1,16 +1,13 @@
 ﻿using System;
 using XamlingCore.Portable.Model.Contract;
 
-namespace SoloFi.Entity
+namespace BlueLight.Entity
 {
     public class ApplicationSettingsEntity : IEntity
     {
         public ApplicationSettingsEntity()
         {
             Id = Guid.NewGuid();
-            //ServerBaseUrl = @"http://fakenavigatorapi.azurewebsites.net/api/";
-            ServerBaseUrl = @"http://legacynavapi.azurewebsites.net/api/";
-            //ServerBaseUrl = @"http://http://navigatorapi.azurewebsites.net/api/";
         }
         public Guid Id { get; set; }
 

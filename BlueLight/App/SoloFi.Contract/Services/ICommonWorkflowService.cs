@@ -1,8 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using XamlingCore.Portable.Workflow.Stage;
-
-namespace SoloFi.Contract.Services
+﻿namespace BlueLight.Contract.Services
 {
     public interface ICommonWorkflowService
     {

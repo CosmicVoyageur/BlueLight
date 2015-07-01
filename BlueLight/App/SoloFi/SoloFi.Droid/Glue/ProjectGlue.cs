@@ -1,15 +1,15 @@
 using System.Reflection;
 using Autofac;
-using SoloFi.Contract.Platform;
-using SoloFi.Contract.Services;
-using SoloFi.Droid.Platform;
-using SoloFi.Model.Config;
-using SoloFi.Model.Services;
+using BlueLight.Contract.Platform;
+using BlueLight.Contract.Services;
+using BlueLight.Droid.Platform;
+using BlueLight.Model.Config;
+using BlueLight.Model.Services;
 using XamlingCore.Droid.Glue;
 using XamlingCore.Platform.Shared.Glue;
 using XamlingCore.Portable.Contract.Downloaders;
 
-namespace SoloFi.Droid.Glue
+namespace BlueLight.Droid.Glue
 {
     class ProjectGlue : DroidGlue
     {

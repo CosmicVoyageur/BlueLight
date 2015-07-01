@@ -2,11 +2,11 @@
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using SoloFi.Contract.Services;
-using SoloFi.Entity;
+using BlueLight.Contract.Services;
+using BlueLight.Entity;
 using XamlingCore.Portable.Contract.Entities;
 
-namespace SoloFi.Model.Services
+namespace BlueLight.Model.Services
 {
     public class ApplicationSettingsService : LocalEntityService<ApplicationSettingsEntity>, IApplicationSettingsService
     {

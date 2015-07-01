@@ -2,15 +2,15 @@ using System;
 using Android.Content;
 using Android.Runtime;
 using Android.Util;
-using SoloFi.CustomViews;
-using SoloFi.Droid.Render;
+using BlueLight.CustomViews;
+using BlueLight.Droid.Render;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using View = Android.Views.View;
 
 [assembly: ExportRenderer(typeof(MyCustomView), typeof(CustomViewRenderer))]
 
-namespace SoloFi.Droid.Render
+namespace BlueLight.Droid.Render
 {
     public class CustomViewRenderer : ViewRenderer<MyCustomView,MyAndroidView>
     {

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Tsl.AsciiProtocol.Pcl;
 
-namespace SoloFi.Contract.Platform
+namespace BlueLight.Contract.Platform
 {
     public interface IBluetoothRfidReaderDiscoveryService
     {

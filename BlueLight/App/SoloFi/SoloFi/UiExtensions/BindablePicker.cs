@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Specialized;
 using Xamarin.Forms;
 
-namespace SoloFi.UiExtensions
+namespace BlueLight.UiExtensions
 {
     public class BindablePicker : Picker
     {

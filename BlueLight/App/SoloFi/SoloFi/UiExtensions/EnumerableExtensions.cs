@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace SoloFi.UiExtensions
+namespace BlueLight.UiExtensions
 {
     public static class EnumerableExtensions
     {

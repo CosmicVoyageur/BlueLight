@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.Widget;
-using SoloFi.Contract.Platform;
+using BlueLight.Contract.Platform;
 
-namespace SoloFi.Droid.Platform
+namespace BlueLight.Droid.Platform
 {
     public class NotifyService : INotifyService
     {

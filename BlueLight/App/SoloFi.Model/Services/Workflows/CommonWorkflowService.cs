@@ -1,6 +1,6 @@
-﻿using SoloFi.Contract.Services;
+﻿using BlueLight.Contract.Services;
 
-namespace SoloFi.Model.Services.Workflows
+namespace BlueLight.Model.Services.Workflows
 {
     public class CommonWorkflowService : ICommonWorkflowService
     {

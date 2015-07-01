@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Android.App;
-using SoloFi.Contract.Platform;
+using BlueLight.Contract.Platform;
 using Xamarin.Forms;
 
-namespace SoloFi.Droid.Platform
+namespace BlueLight.Droid.Platform
 {
     public class RandomThing : IRandomInterface
     {

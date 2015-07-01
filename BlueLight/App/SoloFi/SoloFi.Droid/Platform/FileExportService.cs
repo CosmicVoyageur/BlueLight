@@ -1,23 +1,13 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Java.IO;
-using SoloFi.Contract.Platform;
+using BlueLight.Contract.Platform;
 
-namespace SoloFi.Droid.Platform
+namespace BlueLight.Droid.Platform
 {
     public class FileExportService : IFileExportService
     {
 
-        private const string DirectoryName = "Ramp_Data";
+        private const string DirectoryName = "Rian_Data";
         private static readonly string Root = Android.OS.Environment.ExternalStorageDirectory.Path;
         private static readonly string Path = System.IO.Path.Combine(Root, DirectoryName);
 

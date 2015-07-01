@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace SoloFi.CustomViews
+namespace BlueLight.CustomViews
 {
     public class MyCustomView : ContentView
     {

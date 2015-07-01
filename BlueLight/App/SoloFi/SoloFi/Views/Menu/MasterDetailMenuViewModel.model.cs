@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SoloFi.CustomViews;
-using SoloFi.Tiles.Menu;
+﻿using BlueLight.CustomViews;
+using BlueLight.Tiles.Menu;
 using XamlingCore.Portable.View.ViewModel;
 using XamlingCore.Portable.View.ViewModel.Base;
 
-namespace SoloFi.Views
+namespace BlueLight.Views.Menu
 {
     public class MasterDetailMenuViewModel : DisplayListViewModel<MenuOptionTileViewModel, XViewModel>
     {
