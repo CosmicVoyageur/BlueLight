@@ -7,8 +7,6 @@ namespace SoloFi.Contract.Services
     {
         Task<ApplicationSettingsEntity> GetApplicationSettings();
         Task<bool> SaveApplicationSettings(ApplicationSettingsEntity applicationSettings);
-        Task UpdateStoredToken(Tokens tokens);
-        Task<Tokens> GetAuthTokens();
         Task SetUserName(string userName);
     }
 }

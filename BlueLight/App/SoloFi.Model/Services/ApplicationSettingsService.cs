@@ -42,27 +42,6 @@ namespace SoloFi.Model.Services
             return await _entityCache.SetEntity(SettingsEntityKey, applicationSettings);
         }
 
-        public async Task UpdateStoredToken(Tokens tokens)
-        {
-            var settings = await GetApplicationSettings();
-            settings.StoredToken = tokens;
-            await SaveApplicationSettings(settings);
-            _tokens = tokens;
-        }
-
-        private Tokens _tokens;
-        public async Task<Tokens> GetAuthTokens()
-        {
-            if (_tokens==null)
-            {
-                var settings = await GetApplicationSettings();
-                return settings.StoredToken;
-            }
-            else
-            {
-                return _tokens;
-            }
-        }
 
         public async Task SetUserName(string userName)
         {

@@ -44,92 +44,25 @@
     <Compile Include="CustomViews\TrulyObservableCollection.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tiles\CustomerSpecific\Iluka\IlukaParentTileView.xaml.cs">
-      <DependentUpon>IlukaParentTileView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Tiles\CustomerSpecific\Iluka\IlukaParentTileViewModel.model.cs" />
-    <Compile Include="Tiles\CustomerSpecific\Iluka\IlukaSampleTileView.xaml.cs">
-      <DependentUpon>IlukaSampleTileView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Tiles\CustomerSpecific\Iluka\IlukaSampleTileViewModel.model.cs" />
     <Compile Include="Tiles\Files\RegularFileTileView.xaml.cs">
       <DependentUpon>RegularFileTileView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tiles\Files\RegularFileTileViewModel.model.cs" />
-    <Compile Include="Tiles\Readers\RegularReaderTileView.xaml.cs">
-      <DependentUpon>RegularReaderTileView.xaml</DependentUpon>
+    <Compile Include="Tiles\Menu\MenuOptionTileView.xaml.cs">
+      <DependentUpon>MenuOptionTileView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tiles\Readers\RegularReaderTileViewModel.model.cs" />
-    <Compile Include="Tiles\Tags\RegularTagTileView.xaml.cs">
-      <DependentUpon>RegularTagTileView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Tiles\Tags\RegularTagTileViewModel.model.cs" />
+    <Compile Include="Tiles\Menu\MenuOptionTileViewModel.model.cs" />
     <Compile Include="UiExtensions\BindablePicker.cs" />
     <Compile Include="UiExtensions\EnumerableExtensions.cs" />
-    <Compile Include="Views\CustomerSpecific\Iluka\FilesView.xaml.cs">
-      <DependentUpon>FilesView.xaml</DependentUpon>
+    <Compile Include="Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\CustomerSpecific\Iluka\FilesViewModel.model.cs" />
-    <Compile Include="Views\CustomerSpecific\Iluka\IlukaHelpView.xaml.cs">
-      <DependentUpon>IlukaHelpView.xaml</DependentUpon>
+    <Compile Include="Views\MainViewModel.model.cs" />
+    <Compile Include="Views\Menu\MasterDetailMenuView.xaml.cs">
+      <DependentUpon>MasterDetailMenuView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\CustomerSpecific\Iluka\IlukaHelpViewModel.model.cs" />
-    <Compile Include="Views\CustomerSpecific\Iluka\IlukaHomeView.xaml.cs">
-      <DependentUpon>IlukaHomeView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CustomerSpecific\Iluka\IlukaHomeViewModel.model.cs" />
-    <Compile Include="Views\CustomerSpecific\Iluka\Parents\EditTransponderView.xaml.cs">
-      <DependentUpon>EditTransponderView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CustomerSpecific\Iluka\Parents\EditTransponderViewModel.model.cs" />
-    <Compile Include="Views\CustomerSpecific\Iluka\Parents\ExportParentView.xaml.cs">
-      <DependentUpon>ExportParentView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CustomerSpecific\Iluka\Parents\ExportParentViewModel.model.cs" />
-    <Compile Include="Views\CustomerSpecific\Iluka\Parents\ListParentsView.xaml.cs">
-      <DependentUpon>ListParentsView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CustomerSpecific\Iluka\Parents\ListParentsViewModel.model.cs" />
-    <Compile Include="Views\CustomerSpecific\Iluka\Parents\ManageParentView.xaml.cs">
-      <DependentUpon>ManageParentView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CustomerSpecific\Iluka\Parents\ManageParentViewModel.model.cs" />
-    <Compile Include="Views\CustomerSpecific\Iluka\QuickPickView.xaml.cs">
-      <DependentUpon>QuickPickView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CustomerSpecific\Iluka\QuickPickViewModel.model.cs" />
-    <Compile Include="Views\HomeHub\Extras\HelpView.xaml.cs">
-      <DependentUpon>HelpView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\HomeHub\Extras\HelpViewModel.model.cs" />
-    <Compile Include="Views\HomeHub\MainMenuView.xaml.cs">
-      <DependentUpon>MainMenuView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\HomeHub\MainMenuViewModel.model.cs" />
-    <Compile Include="Views\HomeHub\Extras\SettingsView.xaml.cs">
-      <DependentUpon>SettingsView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\HomeHub\Extras\SettingsViewModel.model.cs" />
-    <Compile Include="Views\HomeHub\Extras\ReaderSelectView.xaml.cs">
-      <DependentUpon>ReaderSelectView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\HomeHub\Extras\ReaderSelectViewModel.model.cs" />
-    <Compile Include="Views\Ramp\ReaderLicencingView.xaml.cs">
-      <DependentUpon>ReaderLicencingView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Ramp\ReaderLicencingViewModel.model.cs" />
-    <Compile Include="Views\TagHub\TagListView.xaml.cs">
-      <DependentUpon>TagListView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\TagHub\TagListViewModel.model.cs" />
-    <Compile Include="Views\TagHub\WriteToTagView.xaml.cs">
-      <DependentUpon>WriteToTagView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\TagHub\WriteToTagViewModel.model.cs" />
-    <Compile Include="Views\TestView.xaml.cs">
-      <DependentUpon>TestView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\TestViewModel.model.cs" />
+    <Compile Include="Views\Menu\MasterDetailMenuViewModel.model.cs" />
+    <Compile Include="Views\Menu\MasterDetailRootViewModel.model.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Autofac">
@@ -245,120 +178,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\HomeHub\Extras\ReaderSelectView.xaml">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="Views\Menu\MasterDetailMenuView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Tiles\Readers\RegularReaderTileView.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\TestView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\HomeHub\Extras\SettingsView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\HomeHub\Extras\HelpView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Tiles\Tags\RegularTagTileView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\HomeHub\MainMenuView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\TagHub\TagListView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\CustomerSpecific\Schenck\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\CustomerSpecific\Iluka\Parents\ListParentsView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Tiles\CustomerSpecific\Iluka\IlukaParentTileView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\CustomerSpecific\Iluka\IlukaHomeView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\CustomerSpecific\Iluka\Parents\ManageParentView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\CustomerSpecific\Iluka\QuickPickView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\CustomerSpecific\Iluka\FilesView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\CustomerSpecific\Iluka\IlukaHelpView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Tiles\CustomerSpecific\Iluka\IlukaSampleTileView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\CustomerSpecific\Iluka\Parents\ExportParentView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\TagHub\WriteToTagView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\CustomerSpecific\Iluka\Parents\EditTransponderView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -368,9 +190,15 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Ramp\ReaderLicencingView.xaml">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="Tiles\Menu\MenuOptionTileView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MainView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

@@ -31,7 +31,6 @@ namespace SoloFi.Model.Config
                 Headers = new Dictionary<string, string>()
             };
 
-            if (settings.StoredToken!=null && settings.StoredToken.Token!=null)config.Headers.Add("Authorization", "Token " + settings.StoredToken.Token);
 
             
             return config;

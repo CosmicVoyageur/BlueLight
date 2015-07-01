@@ -25,6 +25,7 @@
     <NuGetPackageImportStamp>72e0d2c8</NuGetPackageImportStamp>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -104,6 +105,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\monoandroid\System.Net.Http.Primitives.dll</HintPath>
     </Reference>
+    <Reference Include="System.ObjectModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Tsl.AsciiProtocol.Pcl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -204,30 +206,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
-    <AndroidResource Include="Resources\drawable\cloudsearch.png" />
-    <AndroidResource Include="Resources\drawable\filtericon.png" />
-    <AndroidResource Include="Resources\drawable\globe.png" />
-    <AndroidResource Include="Resources\drawable\add.png" />
-    <AndroidResource Include="Resources\drawable\add_dark.png" />
-    <AndroidResource Include="Resources\drawable\bluetooth.png" />
-    <AndroidResource Include="Resources\drawable\rlist.png" />
-    <AndroidResource Include="Resources\drawable\back.png" />
-    <AndroidResource Include="Resources\drawable\close.png" />
-    <AndroidResource Include="Resources\drawable\edit.png" />
-    <AndroidResource Include="Resources\drawable\addtofavs.png" />
-    <AndroidResource Include="Resources\drawable\favs.png" />
-    <AndroidResource Include="Resources\drawable\calendar.png" />
-    <AndroidResource Include="Resources\drawable\search.png" />
-    <AndroidResource Include="Resources\drawable\settings.png" />
-    <AndroidResource Include="Resources\drawable\questionmark.png" />
-    <AndroidResource Include="Resources\drawable\save.png" />
-    <AndroidResource Include="Resources\drawable\delete.png" />
-    <AndroidResource Include="Resources\drawable\leave.png" />
-    <AndroidResource Include="Resources\drawable\next.png" />
-    <AndroidResource Include="Resources\drawable\magnify.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable\icon.png" />
   </ItemGroup>
   <ItemGroup>

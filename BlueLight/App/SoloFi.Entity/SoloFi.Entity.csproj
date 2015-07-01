@@ -37,31 +37,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AuthorizationTokenDto.cs" />
-    <Compile Include="CustomerSpecific\Iluka\ChildSample.cs" />
-    <Compile Include="CustomerSpecific\Iluka\IlukaBarcode.cs" />
-    <Compile Include="CustomerSpecific\Iluka\IlukaUhfTag.cs" />
-    <Compile Include="CustomerSpecific\Iluka\ISampleIdentifier.cs" />
-    <Compile Include="CustomerSpecific\Iluka\ParentCrate.cs" />
     <Compile Include="FileRepresentation.cs" />
-    <Compile Include="ItemReasonPair.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="ItemSearchParameters.cs" />
-    <Compile Include="ItemType.cs" />
-    <Compile Include="LookupEntity.cs" />
-    <Compile Include="OData\ItemODataCollection.cs" />
-    <Compile Include="Reason.cs" />
-    <Compile Include="RFID\BatteryState.cs" />
-    <Compile Include="Place.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RFID\Reader.cs" />
-    <Compile Include="RFID\ReaderState.cs" />
-    <Compile Include="RFID\Tag.cs" />
     <Compile Include="ApplicationSettingsEntity.cs" />
-    <Compile Include="SmartTrackInventory.cs" />
-    <Compile Include="Snapshot.cs" />
-    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Autofac">
@@ -139,7 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

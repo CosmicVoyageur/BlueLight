@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lists="clr-namespace:XamlingCore.XamarinThings.Content.Lists;assembly=XamlingCore.XamarinThings"
+             x:Class="SoloFi.Views.MasterDetailMenuView"
+             Title="Menu"
+             Icon="icon.png">
+  <StackLayout>
+    <Image Source="sidemenulogo.png" Aspect="AspectFit"/>
+    <lists:XListView ItemsSource="{Binding Items}" MoreDataCommand="{Binding MoreDataCommand}" SelectedItem="{Binding SelectedItem,Mode=TwoWay}"
+              VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"  >
+    </lists:XListView>
+    <Image Source="{Binding RfidImage}"/>
+  </StackLayout>
+</ContentPage>

@@ -32,7 +32,6 @@ namespace SoloFi.Droid.Glue
             #endregion
 
 
-            Builder.RegisterType<BaseRfidReaderService>().As<IRfidReaderService>().SingleInstance();
             var b = Builder.RegisterAssemblyTypes(typeof(LocalEntityService<>).GetTypeInfo().Assembly)
                 .Where((t => t.Name.EndsWith("Repo") || t.Name.EndsWith("Service")));
             b.SingleInstance();

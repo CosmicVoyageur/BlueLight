@@ -14,8 +14,6 @@ namespace SoloFi.Entity
         }
         public Guid Id { get; set; }
 
-        public Tokens StoredToken { get; set; }
-
         public string ServerBaseUrl { get; set; }
 
         public string CurrentUserName { get; set; }
