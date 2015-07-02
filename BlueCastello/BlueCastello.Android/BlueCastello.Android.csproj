@@ -149,6 +149,8 @@
   <ItemGroup>
     <Compile Include="Glue\ProjectGlue.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Platform\NotifyService.cs" />
+    <Compile Include="Platform\Tcp\TcpSocketService.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

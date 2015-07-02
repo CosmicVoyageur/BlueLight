@@ -23,6 +23,7 @@ namespace BlueCastello.Views.Menu
 
             AddPackage<MainViewModel>();
             AddPackage<RGBViewModel>();
+            AddPackage<TcpConnectionViewModel>();
 
             SetMaster(CreateContentModel<MasterDetailMenuViewModel>());
             Build();

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BlueCastello.Views.Main.TcpConnectionView">
+  <StackLayout>
+    <Entry Placeholder="IP Address" Text="{Binding IpText}" HorizontalOptions="CenterAndExpand"/>
+    <Entry Placeholder="Port" Text="{Binding Port}" HorizontalOptions="CenterAndExpand"/>
+    <Button Text="Connect" Command="{Binding ConnectCommand}" HorizontalOptions="CenterAndExpand"/>
+    
+  </StackLayout>
+</ContentPage>
