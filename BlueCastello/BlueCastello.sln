@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueCastello", "BlueCastello\BlueCastello.csproj", "{D7B7EE13-D6F4-4EEF-B0AD-CF9BA5D9EE28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueCastello.Android", "BlueCastello.Android\BlueCastello.Android.csproj", "{C0705740-1C3D-47DD-A223-4D4EDF4F31CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{4F415F83-95FB-4F7B-A45C-D4DF491C50D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueCastello.Model", "BlueCastello.Model\BlueCastello.Model.csproj", "{E69EE60C-5F57-4EAB-9819-4FEB539AF4BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueCastello.Entity", "BlueCastello.Entity\BlueCastello.Entity.csproj", "{8ED14CCD-3CDE-43A3-B57B-12467EDCE4AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueCastello.Contract", "BlueCastello.Contract\BlueCastello.Contract.csproj", "{84159C1B-7CAB-4290-9924-CB809B884ACD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7B7EE13-D6F4-4EEF-B0AD-CF9BA5D9EE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B7EE13-D6F4-4EEF-B0AD-CF9BA5D9EE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B7EE13-D6F4-4EEF-B0AD-CF9BA5D9EE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B7EE13-D6F4-4EEF-B0AD-CF9BA5D9EE28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0705740-1C3D-47DD-A223-4D4EDF4F31CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0705740-1C3D-47DD-A223-4D4EDF4F31CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0705740-1C3D-47DD-A223-4D4EDF4F31CA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C0705740-1C3D-47DD-A223-4D4EDF4F31CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0705740-1C3D-47DD-A223-4D4EDF4F31CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0705740-1C3D-47DD-A223-4D4EDF4F31CA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E69EE60C-5F57-4EAB-9819-4FEB539AF4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69EE60C-5F57-4EAB-9819-4FEB539AF4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69EE60C-5F57-4EAB-9819-4FEB539AF4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69EE60C-5F57-4EAB-9819-4FEB539AF4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED14CCD-3CDE-43A3-B57B-12467EDCE4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED14CCD-3CDE-43A3-B57B-12467EDCE4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED14CCD-3CDE-43A3-B57B-12467EDCE4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED14CCD-3CDE-43A3-B57B-12467EDCE4AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84159C1B-7CAB-4290-9924-CB809B884ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84159C1B-7CAB-4290-9924-CB809B884ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84159C1B-7CAB-4290-9924-CB809B884ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84159C1B-7CAB-4290-9924-CB809B884ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E69EE60C-5F57-4EAB-9819-4FEB539AF4BF} = {4F415F83-95FB-4F7B-A45C-D4DF491C50D5}
+		{8ED14CCD-3CDE-43A3-B57B-12467EDCE4AF} = {4F415F83-95FB-4F7B-A45C-D4DF491C50D5}
+		{84159C1B-7CAB-4290-9924-CB809B884ACD} = {4F415F83-95FB-4F7B-A45C-D4DF491C50D5}
+	EndGlobalSection
+EndGlobal
