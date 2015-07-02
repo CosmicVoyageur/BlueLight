@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace BlueCastello.Views
+namespace BlueCastello.Views.Main
 {
-    public partial class MainView : ContentPage
+    public partial class RGBView : ContentPage
     {
-        public MainView()
+        public RGBView()
         {
             InitializeComponent();
         }

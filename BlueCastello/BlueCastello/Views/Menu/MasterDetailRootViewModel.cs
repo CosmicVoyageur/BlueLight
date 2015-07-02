@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BlueCastello.Views.Main;
 using Xamarin.Forms;
 using XamlingCore.XamarinThings.Content.MasterDetail;
 using XamlingCore.XamarinThings.Contract;
@@ -21,6 +22,7 @@ namespace BlueCastello.Views.Menu
             NavigationTint = Color.Silver;
 
             AddPackage<MainViewModel>();
+            AddPackage<RGBViewModel>();
 
             SetMaster(CreateContentModel<MasterDetailMenuViewModel>());
             Build();

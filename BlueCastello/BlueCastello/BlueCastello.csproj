@@ -44,10 +44,14 @@
       <DependentUpon>MenuOptionView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tiles\Menu\MenuOptionViewModel.cs" />
-    <Compile Include="Views\MainView.xaml.cs">
+    <Compile Include="Views\Main\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainViewModel.cs" />
+    <Compile Include="Views\Main\MainViewModel.cs" />
+    <Compile Include="Views\Main\RGBView.xaml.cs">
+      <DependentUpon>RGBView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Main\RGBViewModel.cs" />
     <Compile Include="Views\Menu\MasterDetailMenuView.xaml.cs">
       <DependentUpon>MasterDetailMenuView.xaml</DependentUpon>
     </Compile>
@@ -155,7 +159,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\MainView.xaml">
+    <EmbeddedResource Include="Views\Main\MainView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Main\RGBView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
